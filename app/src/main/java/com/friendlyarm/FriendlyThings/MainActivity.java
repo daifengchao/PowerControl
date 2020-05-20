@@ -8,14 +8,12 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
-
 
 
 public class MainActivity extends Activity{
 
-    private static final String TAG = "###DFC###";
+    private static final String TAG = "PowerCtl-MainActivity";
     private final static int GPIO_NUM = 33;
     private Button mButton;
     private SharedPreferences sharedPreferences;
@@ -68,12 +66,12 @@ public class MainActivity extends Activity{
                         }
                     };
                     handler.postDelayed(runnable, 300);
-                    mButton.setBackgroundResource(R.drawable.power);
+                    //mButton.setBackgroundResource(R.drawable.power);
                 }
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
                     if(HardwareControler.setGPIOValue(GPIO_NUM, GPIOEnum.HIGH) == 0){
                         Log.d(TAG, "Button DOWN ");
-                        mButton.setBackgroundResource(R.drawable.power_press);
+                        //mButton.setBackgroundResource(R.drawable.power_press);
                     }
                 }
                 return true;

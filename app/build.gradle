@@ -6,7 +6,7 @@ android {
             keyAlias 'android'
             keyPassword 'android'
             storePassword 'android'
-            storeFile file('/home/advantech/Desktop/Android6.0_SDK/AIM_SDK_Jianfeng/AIM_SDK_Jianfeng/src/APK_SIGNATURE_FILE/rk3399-ys/platform.jks')
+            storeFile file('../platform.jks')
         }
     }
 

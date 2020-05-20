@@ -5,9 +5,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/power"
+        android:icon="@drawable/loongson"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/power"
+        android:roundIcon="@drawable/loongson"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
